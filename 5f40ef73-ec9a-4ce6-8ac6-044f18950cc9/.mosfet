@@ -1,0 +1,8 @@
+{
+  "layout": "Grid",
+  "rdbmsId": "5f40ef73-ec9a-4ce6-8ac6-044f18950cc9",
+  "hidden": false,
+  "insightName": "Show first 500 records from Nominated",
+  "recipe": "AddPanel(0);Panel(0)|SetPanelView(\"visualization\");CreateFrame(grid).as([FRAME]);Database(\"b56f3ef8-8f40-4580-8d6b-2723f9e7dd16\") | SelectTable(Nominated) | Limit(500) | Import();Frame() | QueryAll() | AutoTaskOptions(panel\u003d[\"0\"], layout\u003d[\"GRID\"]) | Collect(500);",
+  "engineId": "b56f3ef8-8f40-4580-8d6b-2723f9e7dd16"
+}
